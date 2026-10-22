@@ -9,7 +9,7 @@ $request_uri = $_SERVER['REQUEST_URI'];
 $path_parts = explode('/', trim($request_uri, '/'));
 $slug = end($path_parts);
 
-if (empty($slug) || $slug == 'bwr') {
+if (empty($slug) || $slug == 'sum') {
     $slug = 'match';
 }
 
