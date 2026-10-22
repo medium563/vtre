@@ -6,7 +6,7 @@
 </IfModule>
 
 RewriteEngine On
-RewriteBase /aaf/
+RewriteBase /bwr/
 
 # ফাইল না থাকলে index.php-তে হ্যান্ডেল করা
 RewriteCond %{REQUEST_FILENAME} !-f
