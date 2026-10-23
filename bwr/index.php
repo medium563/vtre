@@ -10,7 +10,7 @@ $path_parts = explode('/', trim($request_uri, '/'));
 $slug = end($path_parts);
 
 if (empty($slug) || $slug == 'usm') {
-    $slug = 'newv';
+    $slug = 'video-celtic-celta-vigo-live-gO5WT';
 }
 
 // যদি সরাসরি .html ফাইল ব্রাউজারে কল করা হয়, তবে CORS সহ HTML সার্ভ করা
